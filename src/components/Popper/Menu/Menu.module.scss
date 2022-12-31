@@ -1,0 +1,21 @@
+.menuList {
+  width: 200px;
+}
+
+header {
+  position: relative;
+  height: 40px;
+}
+
+.backBtn {
+  width: 50px;
+  height: 100%;
+  background-color: transparent;
+  cursor: pointer;
+}
+.headerTitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

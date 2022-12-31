@@ -1,0 +1,46 @@
+.wrapper {
+  font-weight: 700;
+  padding: 9px 16px;
+  min-width: 80px;
+  border-radius: 4px;
+  background-color: var(--white);
+  user-select: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  //   nút khác đứng đằng sau
+  + .wrapper {
+    margin-left: 8px;
+  }
+
+  //   high priority
+  &.disabled {
+    pointer-events: none;
+    opacity: 0.3;
+  }
+}
+
+.rounded {
+  border-radius: 999px;
+  border: grey solid 1px;
+  color: grey;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.primary {
+  background-color: var(--primary);
+  border: var(--primary);
+  color: var(--white);
+}
+
+.outline {
+  border: var(--primary) solid 1px;
+  color: var(--primary);
+}
+
+.text {
+  &:hover {
+    text-decoration: underline;
+  }
+}
